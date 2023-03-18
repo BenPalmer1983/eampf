@@ -1,2 +1,2 @@
 #!/bin/bash
-../../bin/eampa.x -V input.nml 
+../../bin/eampf.x -v -i=input.nml 
