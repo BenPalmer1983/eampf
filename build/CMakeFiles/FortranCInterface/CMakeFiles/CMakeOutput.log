@@ -1,0 +1,18 @@
+Performing C SOURCE FILE Test C_SUPPORTS_DOLLAR succeeded with the following output:
+Change Dir: /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc2d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc2d5.dir/build.make CMakeFiles/cmTC_cc2d5.dir/build
+gmake[1]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc2d5.dir/src.c.o
+/usr/bin/cc -DC_SUPPORTS_DOLLAR   -o CMakeFiles/cmTC_cc2d5.dir/src.c.o -c /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cc2d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc2d5.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_cc2d5.dir/src.c.o -o cmTC_cc2d5 
+gmake[1]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+extern int dollar$(void);
+int main() { return 0; }
+
