@@ -4,15 +4,7 @@
 #include <cstring>
 #include <vector>
 
-
-
-extern "C"
-{
-    int get_file_list(const char* path, int paths_size, char* paths);
-}
-
-
-
+#include "get_file_list.h"
 
 int get_file_list(const char* path, int paths_size, char* paths)
 {
@@ -38,7 +30,6 @@ int get_file_list(const char* path, int paths_size, char* paths)
     }
 
     std::strcpy(paths, fileList.c_str());
-    std::cout << paths_length << std::endl;
 
     return paths_length;
 }

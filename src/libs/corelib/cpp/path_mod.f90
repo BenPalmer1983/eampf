@@ -53,17 +53,17 @@ end function get_cwd
 
 
 function get_file_list(path)
-    character(len=*) ::                          path
-    character(255) ::     c_path
-    character(1000000) ::     c_paths
-    integer(C_INT) ::     paths_length
-    character(255) ::     buffer
-    character(255), allocatable ::    get_file_list(:)
-    integer :: file_count
-    integer :: n, m, k
+    character(len=*), intent(in) ::              path
+    character(255) ::                            c_path
+    character(1000000) ::                        c_paths
+    integer(C_INT) ::                            paths_length
+    character(255) ::                            buffer
+    character(255), allocatable ::               get_file_list(:)
+    integer ::                                   file_count
+    integer ::                                   n, m, k
   
     ! Call the C++ function to get the character array
-    c_path = "/cloud/Code/fortran/eampf/examples/test" // c_null_char
+    c_path = trim(path) // c_null_char
     paths_length = c_get_file_list(c_path, len(c_paths), c_paths)
 
     file_count = 1

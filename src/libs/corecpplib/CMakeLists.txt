@@ -12,6 +12,7 @@ set_target_properties(corecpplib PROPERTIES CXX_STANDARD 17)
 target_sources(corecpplib PRIVATE
     path/get_cwd.cpp
     path/get_file_list.cpp
+    path/file_exists.cpp
 )
 
 

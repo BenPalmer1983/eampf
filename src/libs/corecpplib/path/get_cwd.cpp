@@ -2,12 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-
-extern "C"
-{
-    void get_cwd(char* path, int paths_size);
-}
-
+#include "get_cwd.h"
 
 void get_cwd(char* path, int paths_size) 
 {
@@ -21,15 +16,4 @@ void get_cwd(char* path, int paths_size)
     std::strncpy(path, current_path_string.c_str(), actual_size);
     path[actual_size] = '\0'; // Null-terminate the string
 }
-
-
-
-
-
-
-
-
-
-
-
 
