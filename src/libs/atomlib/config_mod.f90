@@ -3,7 +3,8 @@ module config_mod
 use kinds_mod, only :                            int32, real64
 use character_mod, only :                        set_character
 use character_mod, only :                        remove_comments
-use string_mod, only :                           string_t, string_array_t
+use string_mod, only :                           string_t
+use string_array_mod, only :                     string_array_t
 use labels_mod, only :                           labels_g
 
 implicit none
@@ -140,13 +141,13 @@ subroutine load(this, file_path)
       cn = ichar(buffer(1:1))
       if((cn >= 65 .and. cn <= 90) .or. (cn >= 97 .and. cn <= 112))then
         call line%split(buffer) 
-        if(line%counter .eq. 4)then
+        if(line%size() .eq. 4)then
           n = n + 1
           this%id(n) = labels_g%set(line%string(1))
           this%xyz(n, 1) = line%real(2)
           this%xyz(n, 2) = line%real(3)
           this%xyz(n, 3) = line%real(4)
-        else if(line%counter .eq. 7)then
+        else if(line%size() .eq. 7)then
           n = n + 1
           if(.not. allocated(this%forces_known)) allocate(this%forces_known(this%atoms, 1:3))
           this%id(n) = labels_g%set(line%string(1))

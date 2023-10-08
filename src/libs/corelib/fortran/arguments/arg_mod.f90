@@ -1,6 +1,8 @@
 module arg_mod
 
     use kinds_mod
+    use string_mod, only :                       string_t
+    use string_array_mod, only :                 string_array_t
         
     implicit none
     private
@@ -9,7 +11,8 @@ module arg_mod
     type, public :: arg_t
         character(len=:), allocatable ::         raw
         character(len=:), allocatable ::         flag
-        character(len=:), allocatable ::         value
+        integer ::                               value_int
+        character(len=:), allocatable ::         value_char
     contains
         procedure, public ::                     set
         procedure, public ::                     get_raw
@@ -30,12 +33,14 @@ module arg_mod
         
         if(allocated(this%raw)) deallocate(this%raw)
         if(allocated(this%flag)) deallocate(this%flag)
-        if(allocated(this%value)) deallocate(this%value)
+        if(allocated(this%value_char)) deallocate(this%value_char)
 
 
         raw_len = len_trim(buffer) 
         allocate(character(len=raw_len) :: this%raw)
         this%raw = trim(buffer)
+
+
 
     
     end subroutine set

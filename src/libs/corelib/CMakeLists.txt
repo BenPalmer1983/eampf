@@ -21,6 +21,7 @@ target_sources(corelib PRIVATE
 
     fortran/string/character_mod.f90
     fortran/string/string_mod.f90
+    fortran/string/string_array_mod.f90
 
     fortran/arguments/args_mod.f90
     fortran/arguments/arg_mod.f90
