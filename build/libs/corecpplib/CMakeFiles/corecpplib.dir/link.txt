@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcorecpplib.a CMakeFiles/corecpplib.dir/path/get_cwd.cpp.o CMakeFiles/corecpplib.dir/path/get_file_list.cpp.o
+/usr/bin/ranlib libcorecpplib.a

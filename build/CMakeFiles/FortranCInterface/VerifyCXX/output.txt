@@ -1,0 +1,47 @@
+Change Dir: /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile VerifyFortranC && /usr/bin/cmake -S/usr/share/cmake-3.22/Modules/FortranCInterface/Verify -B/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 VerifyFortranC
+gmake[1]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+/usr/bin/cmake -S/usr/share/cmake-3.22/Modules/FortranCInterface/Verify -B/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX/CMakeFiles 6
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/VerifyFortranC.dir/all
+gmake[2]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortran.dir/build.make CMakeFiles/VerifyFortran.dir/depend
+gmake[3]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+cd /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/share/cmake-3.22/Modules/FortranCInterface/Verify /usr/share/cmake-3.22/Modules/FortranCInterface/Verify /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX/CMakeFiles/VerifyFortran.dir/DependInfo.cmake
+Scanning dependencies of target VerifyFortran
+gmake[3]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortran.dir/build.make CMakeFiles/VerifyFortran.dir/build
+gmake[3]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+[ 16%] Building Fortran object CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+/usr/bin/mpif90 -DVERIFY_CXX -I/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX -O0 -g -O3 -DNDEBUG -O3 -c /usr/share/cmake-3.22/Modules/FortranCInterface/Verify/VerifyFortran.f -o CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+[ 33%] Linking Fortran static library libVerifyFortran.a
+/usr/bin/cmake -P CMakeFiles/VerifyFortran.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortran.dir/link.txt --verbose=1
+/usr/bin/ar qc libVerifyFortran.a CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+/usr/bin/ranlib libVerifyFortran.a
+gmake[3]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+[ 33%] Built target VerifyFortran
+/usr/bin/gmake  -f CMakeFiles/VerifyFortranC.dir/build.make CMakeFiles/VerifyFortranC.dir/depend
+gmake[3]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+cd /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/share/cmake-3.22/Modules/FortranCInterface/Verify /usr/share/cmake-3.22/Modules/FortranCInterface/Verify /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX/CMakeFiles/VerifyFortranC.dir/DependInfo.cmake
+Scanning dependencies of target VerifyFortranC
+gmake[3]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortranC.dir/build.make CMakeFiles/VerifyFortranC.dir/build
+gmake[3]: Entering directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+[ 50%] Building C object CMakeFiles/VerifyFortranC.dir/main.c.o
+/usr/bin/cc -DVERIFY_CXX -I/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/main.c.o -c /usr/share/cmake-3.22/Modules/FortranCInterface/Verify/main.c
+[ 66%] Building C object CMakeFiles/VerifyFortranC.dir/VerifyC.c.o
+/usr/bin/cc -DVERIFY_CXX -I/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -c /usr/share/cmake-3.22/Modules/FortranCInterface/Verify/VerifyC.c
+[ 83%] Building CXX object CMakeFiles/VerifyFortranC.dir/VerifyCXX.cxx.o
+/usr/bin/mpic++ -DVERIFY_CXX -I/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/VerifyCXX.cxx.o -c /usr/share/cmake-3.22/Modules/FortranCInterface/Verify/VerifyCXX.cxx
+[100%] Linking CXX executable VerifyFortranC
+/usr/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortranC.dir/link.txt --verbose=1
+/usr/bin/mpic++ -O3 -DNDEBUG CMakeFiles/VerifyFortranC.dir/main.c.o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o CMakeFiles/VerifyFortranC.dir/VerifyCXX.cxx.o -o VerifyFortranC  libVerifyFortran.a -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lgfortran -lquadmath 
+gmake[3]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+[100%] Built target VerifyFortranC
+gmake[2]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+/usr/bin/cmake -E cmake_progress_start /DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX/CMakeFiles 0
+gmake[1]: Leaving directory '/DATA/disk3/cloud/Code/fortran/eampf/build/CMakeFiles/FortranCInterface/VerifyCXX'
+

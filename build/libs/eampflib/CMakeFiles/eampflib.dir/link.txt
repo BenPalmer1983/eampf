@@ -1,0 +1,2 @@
+/usr/bin/ar qc libeampflib.a CMakeFiles/eampflib.dir/banner_mod.f90.o CMakeFiles/eampflib.dir/eampf_mod.f90.o
+/usr/bin/ranlib libeampflib.a

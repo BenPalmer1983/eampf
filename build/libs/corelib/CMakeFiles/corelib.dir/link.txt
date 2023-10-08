@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcorelib.a CMakeFiles/corelib.dir/fortran/kinds_mod.f90.o CMakeFiles/corelib.dir/fortran/string/character_mod.f90.o CMakeFiles/corelib.dir/fortran/string/string_mod.f90.o CMakeFiles/corelib.dir/cpp/path_mod.f90.o CMakeFiles/corelib.dir/cpp/file_system_mod.f90.o
+/usr/bin/ranlib libcorelib.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libatomlib.a CMakeFiles/atomlib.dir/labels_mod.f90.o CMakeFiles/atomlib.dir/config_mod.f90.o
+/usr/bin/ranlib libatomlib.a

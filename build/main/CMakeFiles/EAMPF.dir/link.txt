@@ -1,0 +1,1 @@
+/usr/bin/mpic++ -O3 -DNDEBUG CMakeFiles/EAMPF.dir/main.f90.o -o EAMPF  ../libs/corelib/libcorelib.a ../libs/eampflib/libeampflib.a ../libs/corelib/libcorelib.a ../libs/corecpplib/libcorecpplib.a -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lgfortran -lquadmath 

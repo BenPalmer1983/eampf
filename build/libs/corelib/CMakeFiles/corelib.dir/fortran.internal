@@ -1,0 +1,7 @@
+# The fortran modules provided by this target.
+provides
+ character_mod.mod
+ file_system_mod.mod
+ kinds_mod.mod
+ path_mod.mod
+ string_mod.mod

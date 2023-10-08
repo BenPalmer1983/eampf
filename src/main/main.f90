@@ -6,11 +6,15 @@ contains
 
 subroutine main()
 
-use eampf_mod, only :                  run 
+use eampf_mod, only :                  eampf_t 
 
 implicit none
 
-call run()
+type(eampf_t) :: eampf_o
+
+call eampf_o%run()
+
+
 
 end subroutine main
 
